@@ -1,0 +1,225 @@
+/* Select all elements, and set their margin and paddiing */
+*{
+         margin:0px;
+         padding:0px;
+}
+/* allocating area for heading1 div and navigation bar*/
+.navbar{  
+         height:100px;
+         width:100%;      
+}
+/* allocating division for heading1 div  */
+.heading1{
+         height:80px;
+         width:30%;
+         padding-top:20px;
+         float:left;
+}
+/* allocating division for navigation bar */
+.nav1{   
+         height:58px;
+         width:70%;
+         float:right;
+         padding-top:42px;
+}
+/* styling unorder list   */
+.nav2{
+         text-decoration: none;
+         list-style: none;
+         float:right;    
+}
+/* styling lists of unorder list */
+.nav2 li{
+         width:100%;
+         display:inline;
+         padding-right: 60px;
+}
+/* styling content of anchor tag of unorder list */
+.nav2 li a{
+         color:#333;
+         text-decoration: none;
+         transition: 0.6s all;
+         font-weight: 700;
+
+}
+/* applying hover effect on content of anchor tag of unorder list */
+.nav2 li a:hover{
+         color:#c00;  
+}
+/* aplying text color to content of anchor tag having class name "active" in unorder list */
+.nav2 li a.active{
+         color:#c00;
+
+}
+/* applying padding and color to h1 tag in heading1 div */
+.spacing{
+         color: #232d60;
+         padding-left: 40px;
+}
+/* applying padding and color to h4 tag in heading1 div */
+.spac{  
+         color:#232d60;
+         padding-left: 40px;
+}
+/* styling content of p tag having ID "date" */
+#date{
+         color: #232d60;
+         padding-left: 40px;
+         font-weight: 500;
+}
+
+/* defines footer with height and width */
+.footer{    
+         width:100%;
+         height:213px;
+} 
+/* creates division with height and width */
+.div1{ 
+         width:100%;
+         height:173px;
+}
+/* creates division with height and width */
+.div2{
+         width:100%;
+         height:40px;
+         text-align: center;
+}
+/* creates division with height and width */
+.div3{
+         width:34%;
+         height:173px;
+         float:left;
+}
+/* creates division with height and width */
+.div4{
+         width:66%;
+         height:173px;
+         float:right;
+}
+/* creates division with height and width */
+.div5{
+         width:50%;
+         height:173px;
+         float:left;
+}
+/* creates division with height and width */
+.div6{
+         width:50%;
+         height:173px;
+         float:right;
+}
+/* creates division with height and width */
+.center{
+         background-color: rgba(155, 28, 38,0.9); 
+         width: 100%;
+         height: 40px;
+}
+/* creates division with height and width, */
+.follow{
+         width:100%;
+         height:90px; 
+         margin:auto;
+         padding-top:43px;
+}
+/* creates division for unorder list */
+.list{
+         width:100%;
+         height:133px; 
+         margin:auto;
+}
+/* changes texts related attributes of h3 tag  */
+h3 {
+         font-family:serif;
+         color:#232d60;
+         text-decoration: none;
+         text-align: center;
+         padding-top:10px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         word-spacing: 5px;
+}
+/* removes default style and gives left margin of 19px to unorder list */
+.Qlink{
+         list-style: none; 
+         margin-left:19px; 
+}
+/* presents list in inline block and gives right margin of 18px to list */
+.Qlink li{
+         display: inline-block;
+         margin-right:18px;    
+}
+/* defines time delay for hovering effect */
+.Qlink li a{
+         transition: 0.6s all;
+}
+/* creates padding for link when mouse is hover on it */
+.Qlink li a:hover img{
+         transition: 0.6s all;/* defines time delay for hovering effect */   
+         transform: scale(1.5);/*creates zoom in effect on image icon size */      
+         border-radius:50%;/*creates rounded shape on image icon shape */          
+}
+/* removes default style */
+/* alings text in center */
+/* apllies padding of 5px to <ul> tag */
+.Qlinks{
+         list-style-type: none;	
+         text-align: center;
+         padding:5px;
+}
+/* displays list in as block */
+/* defines margin bottom to list */
+.Qlinks li{
+         display:block;
+         margin-bottom:9px;  
+}
+/* changes attribues for text of link */
+.Qlinks li a{
+         color:#232d60;
+         text-decoration: none;
+         font-family:serif;
+         font-size: 15px;
+         letter-spacing: 1px;
+         transition: 0.4s all;
+}
+/*changes margin,padding,font size when mouse curser hover over link*/
+.Qlinks li a:hover{
+         color:#c00;
+         border-radius: 3px;
+         padding:8px;
+         margin:2px;
+         font-size: 19px;
+         font-weight:bolder;			
+}
+/* removes default style for unorder list */
+.icons{
+         list-style: none;
+}
+/* defines display style,margin and padding of list  */
+.icons li{
+         display:block;
+         margin-bottom: 20px;
+         padding-top:6px;
+         padding-left:80%;
+}
+/* defines styel type and padding for unorderlist */
+.details{
+         list-style: none;
+         padding-top:5px;
+}
+/* defines margin for list  */
+.details li{   
+         margin-left:-50%;
+         margin-bottom:15px;
+}
+/* changes texts attributes of p tag with "foot" class */
+p.foot{   
+         color:#232d60;
+         font-size:16px;
+         font-family:serif;            
+}
+/* Styling contents in p tag with class name "copyright" */
+p.copyright{
+         color:#232d60; 
+         font-family:serif;
+         padding-top:12px;
+      }

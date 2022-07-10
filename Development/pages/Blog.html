@@ -1,0 +1,544 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Title of the page -->
+        <title>BLOG</title>
+
+        <!-- defines metadata about an HTML document -->
+        <meta charset="utf-8">
+	    <meta name="description" content="Just Basic HTML" />
+	    <meta name="keywords" content="HTML, CSS, JavaScript" />
+	    <meta name="author" content="bishwaslimbu" />
+
+        <!-- linkin with external JavaScript -->
+        <script type="text/javascript" src="../js/scripts.js" async></script>
+
+        <!--linking with external css-->
+        <link rel="stylesheet" href="../css/Style.css" type="text/css" /> 
+
+        <!--style tag begining-->
+            <!--styling the internal css-->
+            <style type="text/css">
+
+            /* allocating space for wrapper */
+                .container{
+                            background-image: url(../images/background.png);
+                            height:2260px;
+                            width:100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            box-sizing: border-box;
+                            position: relative;
+                }   
+                .mySlides {
+                            display: none
+                }
+                .img { 
+                            height:350px;width: 100%;
+                }
+                /* Slideshow container */
+                .slideshow-container {
+                            width: 100%;
+                            position: relative;
+                            margin: auto;
+                            height:350px;
+                }
+                /* Next & previous buttons */
+                .prev, .next {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 40%;
+                            width: auto;
+                            padding: 16px;
+                            margin-top: -22px;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 18px;
+                            transition: 0.6s ease;
+                            border-radius: 0 3px 3px 0;
+                            user-select: none;
+                }
+                /* Position the "next button" to the right */
+                .next {
+                            right: 0;
+                            border-radius: 3px 0 0 3px;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                            background-color: rgba(0,0,0,0.8);
+                }
+                .container1{                                         
+                            height:1945px;
+                             width:100%;                                                        
+                }
+                        
+                .heading{
+                            background-color: rgba(155, 28, 38,0.8);
+                            width:100%;
+                            height:40px;
+                            text-align: center;
+                                                        
+                }
+                            
+                .container2{                                         
+                            width:85%;
+                            height:1855px;
+                            margin: auto;                                                        
+                            padding-bottom:10px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            box-shadow:5px 5px 25px grey;
+                }
+                /* Number text (1/5 etc) */
+                .numbertext {
+                            color: #f2f2f2;
+                            font-size: 12px;
+                            padding: 8px 12px;
+                            position: absolute;
+                            top: 0;
+                }
+                 /* Fading animation */
+                .fade {                            
+                            animation-name: fade;
+                            animation-duration: 1.5s;
+                }
+                @keyframes fade {
+                            from {opacity: 0.4} 
+                            to {opacity: 1}
+                }
+                  /* creating division divbox */
+                .divbox{
+                            width:98%;
+                            height:1495px;
+                            margin-left:1%;
+                            margin-right: 1%;
+                            margin-top:10px; 
+                }
+                .parafont{
+                            text-decoration: none;
+                            color:#232d60;
+                            padding:2px;
+                            word-spacing: 1px;
+                            text-align: justify;
+                }
+                .heading5{
+                            height:40px;
+                            width:100%;
+                            background-color:rgba(155, 28, 38,0.8);
+                            margin-bottom: 10px;
+                }
+                .content{
+                            height:1445px;
+                            width:100%;
+                }
+                .section1{
+                            height:187px;
+                            width:100%;
+                            text-align: left;
+                            padding-top: 13px;
+                }
+                .section5{
+                            height:200px;
+                            width:100%;
+                            text-align: left;
+                              
+                }
+                            
+                .section2{
+                            height:200px;
+                            width:100%;
+                                
+                }
+                .section3{
+                            height:215px;
+                            width:100%;                                
+                }
+                .blogaurther{
+                            color:rgb(26, 53, 53);
+                            padding-left:7px;
+                }
+                .blogaurther a{
+                            text-decoration: none;
+                            color:rgb(26, 53, 53);
+                            cursor: pointer;
+                }
+                .blogaurther a:hover{
+                            text-decoration: underline;
+                }
+                .more{
+                            color:rgb(26, 53, 53);
+                            padding-left:7px;
+                }
+                .more a{
+                            text-decoration: none;
+                            color:rgb(26, 53, 53);
+                            cursor: pointer;
+                }
+                .more a:hover{
+                            text-decoration: underline;
+                }
+                .title{
+                            text-align: left;
+                                
+                            padding-left:7px;    
+                }
+                .blogpara{
+                            color:rgb(26, 53, 53);
+                            padding-left:7px;
+                            padding-right:5px;
+                            text-align: justify;
+                            padding-top: 5px;
+                            font-size: 13.5px;
+                            text-decoration: none;                                
+                }
+            </style>
+    </head>
+    <body class="body_bgcolor">
+
+        <!-- Creating a wrapper -->
+        <div class = "container">
+
+            <!-- Providing header tag -->
+            <header class="navbar">
+
+                <!-- div for providing a heading and full date time--->
+                <div class="heading1">
+                    <h1 class="spacing">Bishwas Limbu</h1>
+                    <h4 class="spac">Student at Islington College</h4>
+                    <p id="date"></p>                    
+                </div>
+
+                <!-- Creating a navigation bar -->
+                <nav class="nav1">
+
+                     <!--creating unorder list-->
+                    <ul class ="nav2">
+                        <li><a href="../index.html" class="active">HOME</a></li>
+                        <li><a href="CV.html">CV</a></li>
+                        <li><a href="Blog.html">BLOG</a></li>
+                        <li><a href="Research.html">RESEARCH</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                        
+                    </ul>    
+                </nav>    
+            </header>
+
+            <!-- Allocating space for adding main content -->
+            <main class="container1">
+
+            <!-- Allocating space for adding heading content -->
+                <div class="heading">
+                    <h1 style="color: #232d60; padding-top: 3px; font-size: 30px;">Today's Technology</h1>    
+                </div>
+                <!-- Allocating space for adding container2 content -->
+                <div class="container2">
+
+                    <!-- Allocating space for adding slideshow-container content -->
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="../images/Tech 1.png" alt="tech 1"class="img">
+                        
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="../images/tech 3.jpg" alt="tech 3" class="img">
+                        
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="../images/tech 5.jpg" alt="tech 5" class="img">
+                            
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="../images/tech 4.jpg" alt="tech 4" class="img">
+                            
+                        </div>
+                          
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                           
+
+                    </div> 
+                    <!-- Allocating space for adding divbox content -->
+                    <div class="divbox">
+                        <!-- Allocating space for adding heading5 content -->
+                        <div class="heading5">
+                            <h1 style="color: #232d60; padding-top: 3px; font-size: 30px;text-align: center;">Types of Technology</h1> 
+                        </div>
+                        <!-- Allocating space for adding table in div -->
+                        <div class="content">
+ 
+                            <!-- Creating table  with 7 rows and 2 coloumns-->
+                            <table width="100%" border="0">
+                                <tr>
+                                    <th width="20%">
+                                        <section class="section1">
+                                            <img src="../images/info tech 2.jpg" alt="Information Technology" width="100%" height="173px">
+                                        </section>
+                                    </th>
+                                    <th width="100%">
+                                        <section class="section5">
+                                            <h3 class="title">Information Technology</h3>
+                                            <h5 class="blogaurther">by <a href="CV.html">Bishwas Limbu</a>
+                                                Updated: May 24th, 2021
+                                            </h5>
+                                            <p class="blogpara">
+                                                Information Technology is the process of studying, designing, developing,implementing, supporting or managing computer
+                                                based information data,system software and system hardware. IT technician makes ensure that computer system is working well.
+                                                Mostly every company or organization from large to small needs IT technicians to keep the busniess running smoothly.
+                                                Mostly It jobs are divided in to catagories: computer porgrammer, commputer scientist, computer engineering and system analyst.
+                                               <br>Some of the jobs are listed below:-
+                                               <br> - Database admin 
+                                               <br> - Network engineering  
+                                               <br> - Software engineering 
+                                               <br> <h5 class="blogaurther"><a herf="#">Read more...</a></h5>
+                                               </p>
+                                            
+                                        </section>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="20%">
+                                        <section class="section1">
+                                            <img src="../images/communication.jpg" alt="Communication Technology" width="100%" height="173px">
+                                        </section>
+                                    </th>
+                                    <th width="100%">
+                                        <section class="section5">
+                                            <h3 class="title">Communication Technology</h3>
+                                            <h5 class="blogaurther">by <a href="CV.html">Bishwas Limbu</a>
+                                                published: April 20th, 2021
+                                            </h5>
+                                            <p class="blogpara">
+                                                In today's mordern technology era, communiation is one of the most vital factor in people's life. Communication have 
+                                                become a kind of basic need of people.Due to communication technology advancement, any audio or video or both can be deliver between 
+                                                people with interruption less connection.The technology like 3G,4G and now 5G are here to improve and bring more advancement in Communication
+                                                system.The World is becomming more small and small as communication technology bring people closer and closer.
+                                                <br>some of the communication technology are as follows:-                                              
+                                                <br> - Smart mobile phonw 
+                                                <br>  - Emails
+                                                <br>  - text messaging tools 
+                                                <br> <h5 class="blogaurther"><a herf="#">Read more...</a></h5>
+                                            </p>
+                                        </section>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="20%">
+                                        <section class="section1">
+                                            <img src="../images/medical.jpg" alt="Medical Technology" width="100%" height="173px">
+                                        </section>
+                                    </th>
+                                    <th width="100%">
+                                        <section class="section5">
+                                            <h3 class="title">Medical Technology</h3>
+                                            <h5 class="blogaurther">by <a href="CV.html">Bishwas Limbu</a>
+                                                Pubilshed: june 24th, 2021
+                                            </h5>
+                                            <p class="blogpara">
+                                               Medical Technology is applicatioon of science for developing solutions, products and provide services to health problems or issues 
+                                               to save and improve people's lives. These technology supports in preventing diseases, injuriy and other conditions about health related
+                                               issues through early detection tools.They also help to diagonis to identify specific condition which help in its development ans treatement selections.
+                                               MEdiacal technology are also used in real time monitroing patients in checking status of a diseases condition.
+                                               <br>Some of mediacal technology used for saving lives are listed below:-
+                                               <br> - ultrasound scan
+                                               <br> - MRI scan 
+                                               <br> - Electocardiography(ECG)
+                                               <br> <h5 class="blogaurther"><a herf="#">Read more...</a></h5>
+                                               </p>
+                                        </section>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="20%">
+                                        <section class="section1">
+                                            <img src="../images/educatinal.jpg" alt="educatinal technology" width="100%" height="173px">
+                                        </section>
+                                    </th>
+                                    <th width="100%">
+                                        <section class="section5">
+                                            <h3 class="title">Educational Technology</h3>
+                                            <h5 class="blogaurther">by <a href="CV.html">Bishwas Limbu</a>
+                                                Published: July 21th, 2021
+                                            </h5>
+                                            <p class="blogpara">
+                                                Education Technology is area of study which investigates the process of analyzing, implementing, developing and evalutating teaching 
+                                                environment and material used for learning in order to provide execllent teaching and learning environment to students.
+                                                sometime education technology is also known as Instuctional technnology which main purpose is to bring improvements in education system.
+                                                For designing the most effective learning space for students, goals and needs of education must be defined first. Nowdays, due to technological
+                                                advancement learning materials for educational purpose also have big improvement. Mordern Instructional materials such as computer, various software application,
+                                                LCD projectors,camcorders,internet,interactive audio and video conferences,artificial intelligence and so on.
+                                               <br> <h5 class="blogaurther"><a herf="#">Read more...</a></h5>
+                                               </p>
+                                        </section>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="100%" colspan="2">
+                                        <section class="section3">
+                                            <h3 class="title">Positive Impacts of Technology</h3>
+                                            <p class="blogpara">
+                                               -  Technology  help to save the time which help in increase of production in short amount of time.
+                                               <br>
+                                               <br>
+                                               -  Technology like communication technology help to connect people any where,any time with less or no interruption in communication.It sends
+                                                   audio, video and text messages instantly to one point to another point in no time.
+                                               <br>
+                                               <br>
+                                               -  Medical technology help in diagonis, monitor and cure the health problems and saves many lives.
+                                               <br>
+                                               <br>
+                                               -  With advancement of artificial intelligence in technology helps to reduce the risk factor of cyber crime.
+                                               <br>
+                                               <br> 
+                                               <h5 class="more"><a herf="#">Read more...</a></h5>
+                                               </p>
+                                        </section>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="100%" colspan="2">
+                                        <section class="section3">
+                                            <h3 class="title">Negative Impacts of Technology</h3>
+                                                <p class="blogpara">
+                                                    -  As Technology make easy to do any task people are becoming extremly dependent on technology for almost any thing without realizing it.
+                                                    Eg: using Gps to know direction of any location.
+                                                    <br>
+                                                    <br>
+                                                    -  Increasing advancement in technology leads to shortage of jobs for people as techonogly are replacing the task of humans.
+                                                    <br>
+                                                    <br>
+                                                    - As technology has more consumption of energy for preforming task which causes environment pullution.
+                                                    <br>
+                                                    <br>
+                                                    -  Technology affecting the health of humans as people are being extremly addicted to use of technology. such addiction is affecting sleeping 
+                                                    habit of people, many people are having eyes problems and other health problems.
+                                                    <br>
+                                                    <br> 
+                                                        <h5 class="more"><a herf="#">Read more...</a></h5>
+                                                </p>
+                                        </section>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th width="100%" colspan="2">
+                                        <section class="section2">
+                                            <h3 class="title">Overall conclusion</h3>
+                                            <p class="blogpara">
+                                               Technology is application of scientific knowledge which help to improve lives of human beings.
+                                               Technology can greatly changes life style of human beings.There are dfferent types fo technology that
+                                               helps people to do any task efficient.Due to advancement in y. people can communicate with any people,
+                                               any where and any time.Technology have played main role in improvement in medical, educational, industrial area and so on.
+                                               With the advantages of technology there are also disadvantages present like pollution of environmentdute to large consumption of energy,
+                                               risk of health of people as they are beeing more addicted with it.
+                                                <br>
+                                                <br>  
+                                                <h5 class="more"><a herf="#">Read more...</a></h5>
+                                                </p>
+                                        </section>
+                                    </th>
+                                </tr>   
+                            </table>
+                            <!-- ending of table tag -->
+                        </div>   
+                    </div>           
+                </div>
+         </main>
+         <!-- java script for sliding images -->
+                <script>
+                    var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }           
+                            
+                            function showSlides(n) {
+                                 var i;
+                                 var slides = document.getElementsByClassName("mySlides");
+                                 var dots = document.getElementsByClassName("dot");
+                                    if (n > slides.length) {slideIndex = 1}    
+                                        if (n < 1) {slideIndex = slides.length}
+                                        for (i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";  
+                                        }
+                                        slides[slideIndex-1].style.display = "block";      
+                                    }
+                </script>
+                 <!-- Providing the footer content -->
+            <footer class="footer1">
+
+                <!-- Creating a wrapper for the footer -->
+                <div class="div1">
+                    <div class="div3">
+                        <div class="center">
+                            <h3>Follow Here</h3>
+                        </div>
+                        <div class="follow">
+                            <ul class="Qlink">
+                                <li><a href="https://www.google.com/" target="_blank"><img src="../images/googleicon.png" alt="facebookicon" style=" width:47px; height:47px;"></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebookicon.png" alt="facebookicon" style=" width:45px; height:45px;"></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/instaicon.png" alt="facebookicon" style=" width:49px; height:49px;"></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><img src="../images/youtubeicon.png" alt="facebookicon" style=" width:45px; height:45px;"></a></li>
+                                <li><a href="https://www.snapchat.com/" target="_blank"><img src="../images/snapchaticon.png" alt="facebookicon" style=" width:49px; height:49px;"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div4">
+                        <div class="div5">
+                            <div class="center">
+                                <h3>Quick links</h3>
+                            </div>
+                            <div class="list">
+                                <ul class="Qlinks">
+                                    <li> <a href="../index.html" >Home</a></li>
+                                    <li><a href="CV.html">CV</a></li>
+                                    <li> <a href="Blog.html">Blog</a></li>
+                                    <li> <a href="Research.html">Research</a></li>
+                                    <li><a href="Contact.html">Contact</a></li>
+                                </ul>   
+                            </div>
+                        </div>
+                        <div class="div6">
+                            <div class="center">
+                                <h3>contact</h3>
+                            </div>
+                                <div style="width:40%;height:133px;float:left;">
+                                    <ul class ="icons">
+                                        <li class="icon2">
+                                            <img  src="../images/map2.png" alt="map2" style="width:20px; height:20px; ">    
+                                        </li>
+                                        <li class="icon2">
+                                            <img  src="../images/phone.png" alt="phone" width="19px" height="19px">    
+                                        </li>
+                                        <li class="icon2">
+                                            <img src="../images/email.png" alt="email" width="23px" height="23px">  
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <div style="width:60%;height:133px;float:right; text-align:center;">
+                                    <ul class="details">
+                                        <li class="detail"> <p class="foot">653 Thamel Street<br>
+                                             Kathamandu,Nepal</p>
+                                        </li>
+                                        <li class="detail"><p class="foot">+9779808348036<br>+9779804574845</p>
+                                        </li> 
+                                        <li class="detail"> <p class="foot">bisparov@gmail.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div2">
+                    <p class="copyright">CopyRights&copy;2021 | Bishwas Limbu</p>
+                </div>
+            </footer>
+            <!-- end of footer -->
+        </div>       
+    </body>
+</html>

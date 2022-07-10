@@ -1,0 +1,399 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <!-- Title of the page -->
+        <title>HOME</title>
+
+        <!-- defines metadata about an HTML document -->
+        <meta charset="utf-8">
+	    <meta name="description" content="Just Basic HTML" />
+	    <meta name="keywords" content="HTML, CSS, JavaScript" />
+	    <meta name="author" content="bishwaslimbu" />
+
+        <!-- linkin with external JavaScript -->
+        <script type="text/javascript" src="js/scripts.js" async></script>
+
+        <!--linking with external css-->
+        <link rel="stylesheet" href="css/Style.css" type="text/css" /> 
+        
+            <!--style tag begining-->
+            <!--styling the internal css-->
+            <style type="text/css">
+            /*defining division height and width for main container div */
+            /*styling background with image and position of it*/
+                .container{
+                            background-image: url(images/background.png);
+                            height:873px;
+                            width:100%;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            box-sizing: border-box;
+                            position: relative;
+                    
+                }
+                /*defining division height and width of container1 div*/   
+                .container1{
+                            height:560px;
+                            width:100%;
+                            
+                }
+                /*defining column division height and width of col1 div*/ 
+                /*positioning division with float and padding properties*/
+                .col1{
+                            height:490px;
+                            width:30%;
+                            float: left;
+                            padding-top:70px; 
+                    
+                }
+                /*defining column division height and width of col2 div*/ 
+                /*positioning division with float and padding properties*/
+                .col2{
+                            height:510px;
+                            width:70%;
+                            float: right;
+                            padding-top:50px; 
+                }
+                /*defining 1st row division height and width in col2 div */ 
+                .row1{
+                            height:170px; 
+                            width:100%;
+                    
+                }
+                /*defining 2nd row division height and width in col2 div */ 
+                .row2{
+                            height:170px;
+                            width:99%;
+                            padding-right:1%;
+                    
+                }
+                /*defining division height and width of padding0 div*/
+                .padding0{
+                            height:170px;
+                            width:99%;
+
+                }
+                /*defining 3nd row division height and width in col2 div*/ 
+                .row3{
+                            height:170px; 
+                            width:100%;
+                    
+                }
+                /*defining division height and width of container2 div*/ 
+                .container2{
+                            width:100%;
+                            height:510px;
+                }
+                /*Styling emement inside h1 tag*/
+                .H1{
+                            color:#232d60;
+                            font-family: serif;
+                            text-decoration: none;
+                            letter-spacing: 2px;
+                            font-size:70px;
+                            padding-left: 15px;
+                            padding-top: 10px;
+                }
+                /*Styling emement inside h1 tag*/
+                .H2{
+                            color:#232d60;
+                            font-family: serif;
+                            text-decoration: none;
+                            letter-spacing: 2px;
+                            font-size:50px;
+                            padding-left: 15px;
+                }
+                 /*defining sub column division height and width in col2 div*/ 
+                /*positioning division with float,margin and padding properties*/
+                .subcol1{
+                            height:170px;
+                            width: 49.75%;
+                            float:left;
+                            margin-right:0.25%;
+                }
+                 /*defining sub column division height and width in col2 div*/ 
+                /*positioning division with float,margin and padding properties*/
+                .subcol2{
+                            height:170px;
+                            width: 49.75%;
+                            float:right;
+                            margin-left:0.25%;
+                }
+                 /*defining sub column division height and width in col2 div*/ 
+                /*positioning division with float and padding properties*/
+                .subcol3{
+                            height:170px;
+                            width:49.5%;
+                            float:left;     
+                }
+                /*defining sub column division height and width in col2 div*/ 
+                /*positioning division with float properties*/
+                .subcol4{
+                            height:170px;
+                            width: 49.5%;
+                            float:right;
+                   
+                     
+                 }
+                 /*defining sub column division height and width in col2 div*/ 
+                /*positioning division with float properties*/
+                .subcol5{   
+                            height:170px;
+                            width: 49.5%;
+                            float:left;
+                 }
+                 /*defining sub column division height and width in col2 div*/ 
+                /*positioning division with float properties*/
+                .subcol6{   
+                            height:170px;
+                            width: 49.4%;                            
+                            float:right;
+                }
+                /*defining division height and width for image in subcol3 div*/ 
+                .topic{     
+                            height:135px;
+                            width:100%;
+                }
+                /*defining division height and width for readmore button*/
+                /*styling division with background color and border radius */
+                .botton{
+                            height:35px;
+                            width:100%;
+                            background-color: rgba(36, 12, 12,0.5); 
+                            border-bottom-left-radius: 7px;
+                            border-bottom-right-radius:7px;;
+                }
+                 /*styling readmore button with below attributes*/
+                .link_style{ 
+                            background-color:  #333333;
+                            text-decoration: none;
+                            font-family:serif;
+                            font-size:15px;
+                            letter-spacing: 0.5px;
+                            font-weight: 500;
+                            color:#fff;   
+                            padding:7px 7px;
+                            border-radius: 3px;
+                            transition: 0.6s all;
+                            box-shadow: 2px 2px 2px #050505;
+                    }
+                /*styling readmore link button for hover effect*/
+                .link_style:hover{
+                            background-color:#9B1C26;
+                            font-size:17px;
+                            margin:3px;
+                            padding-top: 7px;
+                            padding-bottom: 7px;
+                            border-radius: 3px;
+                }
+                /*styling image size,position,height and width*/
+                .image{
+                            width:85%;
+                            height:350px; 
+                            border-radius:50%;
+                            float:right;
+                            margin-right:30px;
+                }
+                /*styling image size,position,height and width*/
+                .image1{
+                            width:100%; 
+                            height:135px;
+                            border-top-left-radius: 7px;
+                            border-top-right-radius:7px;
+                }
+                
+            </style>
+    </head>
+    <body class="body_bgcolor">
+
+         <!-- Creating a wrapper -->
+        <div class = "container">
+
+            <!-- Providing header tag -->
+            <header class="navbar">
+
+                <!-- div for providing a heading and full date time--->
+                <div class="heading1">
+                    <h1 class="spacing">Bishwas Limbu</h1>
+                    <h4 class="spac">Student at Islington College</h4>
+                    <p id="date"></p>
+                </div>
+
+                <!-- Creating a navigation bar -->
+                <nav class="nav1">
+                    
+                    <!--creating unorder list-->
+                    <ul class ="nav2">
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="pages/CV.html">CV</a></li>
+                        <li><a href="pages/Blog.html">BLOG</a></li>
+                        <li><a href="pages/Research.html">RESEARCH</a></li>
+                        <li><a href="pages/Contact.html">CONTACT</a></li>
+                       
+                    </ul>    
+                </nav>    
+            </header>
+            <!-- Allocating space for adding main content -->
+            <main class="container1">
+                <div class="col1">
+                    <img class="image" src="images/photo2.jpg" alt="photo2">
+                </div>
+                <div class="col2">
+                    <div class="container2">
+                        <div class="row1">
+                            <h1 class="H1">Hello, </h1>
+                             <h1 class="H2" id="h1">Good Morning!</h1>  
+                        </div>
+                        <div class="row2">
+                          <div class="padding0">
+                            <div class="subcol1">
+                                <div class="subcol3">
+                                    <div class="Topic">
+                                        <img src="images/cv.jpg" alt="cv" class="image1">
+                                    </div>
+                                    <div class="botton">
+                                        <div style="width:100%; height:35px">
+                                            <div Style="padding-top:9px; width:100%; height:35px;text-align:center;"> 
+                                                <a href="pages/CV.html" class="link_style">Read more..</a>
+                                           </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="subcol4">
+                                    <div class="Topic">
+                                        <img src="images/blog.jpg" alt="blog" class="image1">
+                                    </div>
+                                    <div class="botton">
+                                        <div style="width:100%; height:35px">
+                                            <div Style="padding-top:9px; width:100%; height:35px;text-align:center;"> 
+                                                <a href="pages/Blog.html" class="link_style">Read more..</a>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="subcol2">
+                                <div class="subcol5">
+                                    <div class="Topic">
+                                        <img src="images/research2.jpg" alt="research2" class="image1">
+                                    </div>
+                                    <div class="botton">
+                                        <div style="width:100%; height:35px">
+                                            <div Style="padding-top:9px; width:100%; height:35px;text-align:center;"> 
+                                                <a href="pages/Research.html" class="link_style">Read more..</a>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="subcol6">
+                                    <div class="Topic">
+                                        <img src="images/contact1.jpg" alt="contact1" class="image1">
+                                    </div>
+                                    <div class="botton">
+                                        <div style="width:100%; height:35px">
+                                            <div Style="padding-top:9px; width:100%; height:35px;text-align:center;"> 
+                                                <a href="pages/Contact.html" class="link_style">Read more..</a>
+                                           </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            
+                         </div>
+                        </div>
+                        <div class="row3"></div>
+                    </div>
+                </div>
+                
+            </main>
+             <!-- Providing the footer content -->
+            <footer class="footer">
+
+                <!-- Creating a wrapper for the footer -->
+                <div class="div1">
+                    <div class="div3">
+                        <div class="center">
+                            <h3>Follow Here</h3>
+                        </div>
+                        <div class="follow">
+                            <ul class="Qlink">
+                                <li><a href="https://www.google.com/" target="_blank"><img src="images/googleicon.png" alt="facebookicon" style=" width:47px; height:47px;"></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/facebookicon.png" alt="facebookicon" style=" width:45px; height:45px;"></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instaicon.png" alt="facebookicon" style=" width:49px; height:49px;"></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><img src="images/youtubeicon.png" alt="facebookicon" style=" width:45px; height:45px;"></a></li>
+                                <li><a href="https://www.snapchat.com/" target="_blank"><img src="images/snapchaticon.png" alt="facebookicon" style=" width:49px; height:49px;"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="div4">
+                        <div class="div5">
+                            <div class="center">
+                                <h3>Quick links</h3>
+                            </div>
+                            <div class="list">
+                                <ul class="Qlinks">
+                                    <li> <a href="index.html" >Home</a></li>
+                                    <li><a href="pages/CV.html">CV</a></li>
+                                    <li> <a href="pages/Blog.html">Blog</a></li>
+                                    <li> <a href="pages/Research.html">Research</a></li>
+                                    <li><a href="pages/Contact.html">Contact</a></li>
+                                </ul>   
+                            </div>
+                        </div>
+                        <div class="div6">
+                            <div class="center">
+                                <h3>contact</h3>
+                            </div>
+                                <div style="width:40%;height:133px;float:left;">
+                                    <ul class ="icons">
+                                        <li class="icon2">
+                                            <img  src="images/map2.png" alt="map2" style="width:20px; height:20px; ">    
+                                        </li>
+                                        <li class="icon2">
+                                            <img  src="images/phone.png" alt="phone" width="19px" height="19px">    
+                                        </li>
+                                        <li class="icon2">
+                                            <img src="images/email.png" alt="email" width="23px" height="23px">  
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <div style="width:60%;height:133px;float:right; text-align:center;">
+                                    <ul class="details">
+                                        <li class="detail"> <p class="foot">653 Thamel Street<br>
+                                             Kathamandu,Nepal</p>
+                                        </li>
+                                        <li class="detail"><p class="foot">+9779808348036<br>+9779804574845</p>
+                                        </li> 
+                                        <li class="detail"> <p class="foot">bisparov@gmail.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div2">
+                     <p class="copyright">CopyRights&copy;2021 | Bishwas Limbu</p>
+                </div>
+            </footer>
+        </div>
+        <!-- java script for changing inner html element content based on time -->
+        <script type="text/javascript">
+       
+            var day = new Date();/*data object is created to access date function*/
+            var hr = day.getHours();/*assigns return value of gethours function in to variable hr */
+            /*a condition is checked with the vale of hr variable*/
+            if (hr >= 0 && hr < 12) {
+                document.getElementById("h1").innerHTML = "Good Morning!";
+            } else if (hr >= 12 && hr <= 17) {
+                document.getElementById("h1").innerHTML = "Good AfterNoon!";
+            } else {
+                document.getElementById("h1").innerHTML = "Good Evening!";
+            }
+            
+        </script>
+    </body>
+</html>
